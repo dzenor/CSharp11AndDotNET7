@@ -1,0 +1,15 @@
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\bin\Debug\net7.0\HelloCSharp.exe
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\bin\Debug\net7.0\HelloCSharp.deps.json
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\bin\Debug\net7.0\HelloCSharp.runtimeconfig.json
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\bin\Debug\net7.0\HelloCSharp.dll
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\bin\Debug\net7.0\HelloCSharp.pdb
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.csproj.AssemblyReference.cache
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.AssemblyInfoInputs.cache
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.AssemblyInfo.cs
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.csproj.CoreCompileInputs.cache
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.dll
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\refint\HelloCSharp.dll
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.pdb
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\HelloCSharp.genruntimeconfig.cache
+C:\FN2\CSharp11AndDotNET7\HelloCSharp1\HelloCSharp\obj\Debug\net7.0\ref\HelloCSharp.dll
