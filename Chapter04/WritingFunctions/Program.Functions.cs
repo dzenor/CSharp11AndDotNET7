@@ -102,9 +102,14 @@ partial class Program
         {
             checked
             {
-                return number * Factorial(number-1);
+                return number * Factorial(number -1);
             }
+
+
+
         };
+    
+
     }
 
     static void RunFactorial()

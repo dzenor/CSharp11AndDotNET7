@@ -1,0 +1,15 @@
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\bin\Debug\net7.0\test your knowledge.exe
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\bin\Debug\net7.0\test your knowledge.deps.json
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\bin\Debug\net7.0\test your knowledge.runtimeconfig.json
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\bin\Debug\net7.0\test your knowledge.dll
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\bin\Debug\net7.0\test your knowledge.pdb
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.csproj.AssemblyReference.cache
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.GeneratedMSBuildEditorConfig.editorconfig
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.AssemblyInfoInputs.cache
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.AssemblyInfo.cs
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.csproj.CoreCompileInputs.cache
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.dll
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\refint\test your knowledge.dll
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.pdb
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\test your knowledge.genruntimeconfig.cache
+C:\FN2\CSharp11AndDotNET7\Exercise\test your knowledge\obj\Debug\net7.0\ref\test your knowledge.dll
