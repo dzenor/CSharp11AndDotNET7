@@ -1,0 +1,15 @@
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\bin\Debug\net7.0\CastingConverting.exe
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\bin\Debug\net7.0\CastingConverting.deps.json
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\bin\Debug\net7.0\CastingConverting.runtimeconfig.json
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\bin\Debug\net7.0\CastingConverting.dll
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\bin\Debug\net7.0\CastingConverting.pdb
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.csproj.AssemblyReference.cache
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.GeneratedMSBuildEditorConfig.editorconfig
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.AssemblyInfoInputs.cache
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.AssemblyInfo.cs
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.csproj.CoreCompileInputs.cache
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.dll
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\refint\CastingConverting.dll
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.pdb
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\CastingConverting.genruntimeconfig.cache
+C:\FN2\CSharp11AndDotNET7\Operators\CastingConverting\obj\Debug\net7.0\ref\CastingConverting.dll

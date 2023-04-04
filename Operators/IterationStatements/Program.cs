@@ -13,3 +13,15 @@ do
 }
 while (password != "Pa$$word");
 WriteLine("Correct!");
+
+
+for (int y = 1; y <=10; y++)
+{
+    WriteLine(y);
+}
+
+string[] names = { "Adam", "Barry", "Charlie" };
+foreach (string name in names)
+{
+    WriteLine($"{name} has {name.Length} characters.");
+}

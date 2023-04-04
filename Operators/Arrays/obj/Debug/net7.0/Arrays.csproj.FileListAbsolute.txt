@@ -1,0 +1,15 @@
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\bin\Debug\net7.0\Arrays.exe
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\bin\Debug\net7.0\Arrays.deps.json
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\bin\Debug\net7.0\Arrays.runtimeconfig.json
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\bin\Debug\net7.0\Arrays.dll
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\bin\Debug\net7.0\Arrays.pdb
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.csproj.AssemblyReference.cache
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.AssemblyInfoInputs.cache
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.AssemblyInfo.cs
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.csproj.CoreCompileInputs.cache
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.dll
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\refint\Arrays.dll
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.pdb
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\Arrays.genruntimeconfig.cache
+C:\FN2\CSharp11AndDotNET7\Operators\Arrays\obj\Debug\net7.0\ref\Arrays.dll
