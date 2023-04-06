@@ -75,22 +75,19 @@
 
 //EXEPTION HANDLING
 
-try
-{
-    Console.Write("Enter a number between 0 and 255: ");
-    int num1 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter another number between 0 and 255: ");
-    int num2 = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine($"{num1} divided by {num2} is {num1 / num2}");
-}
-catch( Exception ex )
-{
-    Console.WriteLine(ex.Message);
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+//try
+//{
+//    Console.Write("Enter a number between 0 and 255: ");
+//    int num1 = Convert.ToInt32(Console.ReadLine());
+//    Console.Write("Enter another number between 0 and 255: ");
+//    int num2 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine($"{num1} divided by {num2} is {num1 / num2}");
+//}
+//catch( Exception ex )
+//{
+//    Console.WriteLine(ex.Message);
+//}
+
 
 
 

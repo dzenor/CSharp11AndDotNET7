@@ -75,18 +75,99 @@
 //Console.WriteLine($"the sum is {sum}");
 
 //ex6
-int i,n;
-double avg;
+//int i,n;
+//double avg;
+//int sum = 0;
+
+//Console.WriteLine("Input numbers from 1 to 10!");
+//for(i = 1; i < 11; i++)
+//{
+//    Console.Write("Number-{0} :", i);
+
+//    n= Convert.ToInt32(Console.ReadLine());
+//    sum +=n;
+//}
+//avg = sum / 10.0;
+//Console.WriteLine($"the sum is {sum}");
+//Console.WriteLine($"the average is {avg}");
+
+//ex7
+//int i = 1;
+
+//Console.WriteLine("Enter a number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+//do
+//{
+//    int result = num * i;
+//    Console.WriteLine("{0} x {1} = {2}", num, i, result);
+//    i++;
+//} while (i <= 10);
+
+//ex8
+
+
+//ex9
+//Console.WriteLine("Enter a number of elements: ");
+
+//int numElements = int.Parse(Console.ReadLine());
+//int[] myArray = new int[numElements];
+
+//for (int i = 0; i < numElements; i++)
+//{
+//    Console.Write("Element {0}: ", i + 1);
+//    int elem = int.Parse(Console.ReadLine());
+//    myArray[i] = elem;
+
+
+
+
+//}
+
+//Console.WriteLine("Array elements:");
+
+//for (int i = 0; i < numElements; i++)
+//{
+//    Console.WriteLine(myArray[i]);
+//}
+
+//ex10
+int[] arr = { 1, 2, 3, 4, 5, 6 };
+
 int sum = 0;
 
-Console.WriteLine("Input numbers from 1 to 10!");
-for(i = 1; i < 11; i++)
+for (int i = 0; i < arr.Length; i++)
 {
-    Console.Write("Number-{0} :", i);
+    sum += arr[i];
+    Console.WriteLine(sum);
 
-    n= Convert.ToInt32(Console.ReadLine());
-    sum +=n;
 }
-avg = sum / 10.0;
-Console.WriteLine($"the sum is {sum}");
-Console.WriteLine($"the average is {avg}");
+Console.WriteLine("Sum of array elements: " + sum);
+
+//ex11
+int[] myArray = { 1, 2, 2, 3, 4, 4, 4, 5 };
+int count = 0;
+
+for (int i = 0; i < myArray.Length; i++)
+{
+    for (int j = i+1; j < myArray.Length; j++)
+    {
+        if (myArray[i] == myArray[j])
+        {
+            count++;
+            break;
+        }
+    }
+}
+Console.WriteLine("Total number of duplicate elements: " + count);
+
+
+
+
+
+
+
+
+
+
+
