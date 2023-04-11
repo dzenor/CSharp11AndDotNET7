@@ -9,4 +9,8 @@
 //int factorialOfFive = Factorial(5);
 //WriteLine(factorialOfFive);
 
-RunFactorial();
+//RunFactorial();
+//WriteLine();
+//Factorial(3);
+
+RunFibImperative();
