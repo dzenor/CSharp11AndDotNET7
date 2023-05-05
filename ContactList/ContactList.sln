@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactList", "ContactList\ContactList.csproj", "{FF6D967F-A90A-4492-BEFA-593DB4131CE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingSystem", "ParkingSystem\ParkingSystem.csproj", "{9811D18B-C542-445B-9E6F-89B721C69F36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF6D967F-A90A-4492-BEFA-593DB4131CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6D967F-A90A-4492-BEFA-593DB4131CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6D967F-A90A-4492-BEFA-593DB4131CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6D967F-A90A-4492-BEFA-593DB4131CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9811D18B-C542-445B-9E6F-89B721C69F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9811D18B-C542-445B-9E6F-89B721C69F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9811D18B-C542-445B-9E6F-89B721C69F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9811D18B-C542-445B-9E6F-89B721C69F36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0DC2503-A222-4E1A-9D0B-218F08E8BEED}
+	EndGlobalSection
+EndGlobal

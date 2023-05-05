@@ -18,4 +18,3 @@ currentAccount.Deposit(500);
     Console.ReadLine();
 }
 
-Console.WriteLine(Main);
