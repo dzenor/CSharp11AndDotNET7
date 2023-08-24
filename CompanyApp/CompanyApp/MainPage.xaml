@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CompanyApp.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Registration" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ScrollView>
+        <VerticalStackLayout Margin="10"  >
+            
+            <VerticalStackLayout Margin="10" BackgroundColor="Crimson">
+                <Frame  BackgroundColor="Crimson" Margin="20" HeightRequest="80"  >
+                    <Label Text="Welcome to Company App" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Title">
+                        
+                    </Label>
+                </Frame>
+            </VerticalStackLayout>
+            <VerticalStackLayout Margin="10" BackgroundColor="Crimson">
+                <ListView ItemsSource="{Binding customList}">
+                    
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Label Text="{Binding MyProperty}">
+
+                                    </Label>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

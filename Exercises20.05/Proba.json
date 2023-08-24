@@ -1,0 +1,1 @@
+[{"Id":1,"Name":"Dzeno","Address":"Jane Sandanski","Subordinared":[{"Id":2,"Name":"john","Address":"Borche Janev","Subordinared":null}]},{"Id":2,"Name":"Tom","Address":"Tome Sandanski","Subordinared":[{"Id":3,"Name":"Ulem","Address":"Hendy Mary","Subordinared":null}]}]

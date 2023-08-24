@@ -7,7 +7,10 @@
 
         public string FoundationYear { get;set; }
 
+
+
         public Company() { }
+
 
         public Company(string companyName, int employeeNumbers, string foundationYear)
         {
@@ -15,5 +18,8 @@
             EmployeeNumbers=employeeNumbers;
             FoundationYear=foundationYear;
         }
+
+
+
     }
 }

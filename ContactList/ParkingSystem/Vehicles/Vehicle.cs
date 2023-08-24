@@ -16,6 +16,8 @@ namespace ParkingSystem.Vehicles
         public string FuelType { get; set; }
         public int PassengersNo { get; set; }
 
+
+
         public Vehicle() { }
 
         public Vehicle(string model, int productionYear, Person owner, int weight, int width, string fuelType, int passengersNo)

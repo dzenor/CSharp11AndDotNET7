@@ -1,0 +1,173 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.9" />
+	  
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\plugins\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.js" />
+    <None Include="wwwroot\plugins\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.js" />
+    <None Include="wwwroot\plugins\bootstrap-touchspin\src\jquery.bootstrap-touchspin.js" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.esm.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\bootstrap-utilities.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\bootstrap.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_floating-labels.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_form-check.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_form-control.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_form-range.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_form-select.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_form-text.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_input-group.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_labels.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\forms\_validation.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_clearfix.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_color-bg.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_colored-links.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_focus-ring.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_icon-link.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_position.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_ratio.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_stacks.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_stretched-link.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_text-truncation.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\helpers\_vr.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_backdrop.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_banner.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_color-mode.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_color-scheme.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_container.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_deprecate.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_image.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_table-variants.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_utilities.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\utilities\_api.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_accordion.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_alert.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_badge.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_button-group.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_buttons.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_card.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_carousel.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_close.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_containers.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_dropdown.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_forms.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_functions.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_grid.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_helpers.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_images.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_list-group.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_maps.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_mixins.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_modal.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_nav.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_navbar.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_offcanvas.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_pagination.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_placeholders.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_popover.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_progress.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_reboot.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_root.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_spinners.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_tables.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_toasts.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_tooltip.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_transitions.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_type.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_utilities.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_variables-dark.scss" />
+    <None Include="wwwroot\plugins\bootstrap\scss\_variables.scss" />
+    <None Include="wwwroot\plugins\ekko-lightbox\dist\ekko-lightbox.js" />
+    <None Include="wwwroot\plugins\ekko-lightbox\dist\ekko-lightbox.min.js" />
+    <None Include="wwwroot\plugins\google-map\gmap.js" />
+    <None Include="wwwroot\plugins\instafeed\instafeed.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.min.map" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.min.map" />
+    <None Include="wwwroot\plugins\slick\fonts\slick.svg" />
+    <None Include="wwwroot\plugins\slick\README.markdown" />
+    <None Include="wwwroot\plugins\slick\slick-animation.min.js" />
+    <None Include="wwwroot\plugins\slick\slick.min.js" />
+    <None Include="wwwroot\plugins\smooth-scroll\dist\js\smooth-scroll.js" />
+    <None Include="wwwroot\plugins\smooth-scroll\dist\js\smooth-scroll.min.js" />
+    <None Include="wwwroot\plugins\smooth-scroll\dist\js\smooth-scroll.polyfills.js" />
+    <None Include="wwwroot\plugins\smooth-scroll\dist\js\smooth-scroll.polyfills.min.js" />
+    <None Include="wwwroot\plugins\syo-timer\build\jquery.syotimer.min.js" />
+    <None Include="wwwroot\plugins\themefisher-font\demo-files\demo.js" />
+    <None Include="wwwroot\plugins\themefisher-font\fonts\themefisher-font.svg" />
+  </ItemGroup>
+
+</Project>

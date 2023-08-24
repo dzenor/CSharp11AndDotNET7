@@ -1,0 +1,26 @@
+﻿@using SimpleMVC.Data.Entities;
+
+@model Product
+@{
+}
+
+<div class="row mt-20">
+	<div class="col-md-5">
+		<div class="single-product-slider">
+			<img src="~/images/products/@Model.ImageName" alt="" class="img-fluid"/>
+		</div>
+	</div>
+	<div class="col-md-7">
+		<div class="single-product-details">
+			<h2>@Model.ProductName</h2>
+			<p class="product-price">$@Model.Price</p>
+
+			<p class="product-description mt-20">
+				@Model.Summary
+			</p>
+			<p>@Model.Category.CategoryName</p>
+		
+			<a href="cart.html" class="btn btn-main btn-primary mt-20">Add To Cart</a>
+		</div>
+	</div>
+</div>

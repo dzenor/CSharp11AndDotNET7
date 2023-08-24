@@ -1,4 +1,6 @@
-﻿namespace ParkingSystem
+﻿using ParkingSystem.Vehicles;
+
+namespace ParkingSystem
 {
     public class Parking
     {
@@ -25,6 +27,46 @@
         public string FreeDays { get; set; }
         public Company OwnerCompany { get; set; }
 
+        public List<VehicleInfo> VehicleInfos { get; set; } = new List<VehicleInfo>();
+
+
+
+        public string addVehicle(Vehicle vehicle, int TimeOfParking)
+        {
+
+            if (vehicle != null)
+            {
+                if (vehicle is Car)
+                {
+                    VehicleInfos.Add(new VehicleInfo(vehicle, TimeOfParking, true, false, false));
+                }
+                else if (vehicle is Lorry)
+                {
+                    VehicleInfos.Add(new VehicleInfo(vehicle, TimeOfParking, false, false, true));
+                }
+                else
+                {
+                    VehicleInfos.Add(new VehicleInfo(vehicle, TimeOfParking, false, true, false));
+                }
+                return "added vehicle";
+            }
+            
+            else
+            {
+                return "not added vehicle!";
+            }
+        }
+
+        public void removeVehicle(string IdVehicle)
+        {
+            foreach (VehicleInfo vehicle in VehicleInfos)
+            {
+                if (vehicle.Vehicle.Model.Equals(IdVehicle))
+                {
+                    VehicleInfos.Remove(vehicle);
+                }
+            }
+        }
 
     }
 }

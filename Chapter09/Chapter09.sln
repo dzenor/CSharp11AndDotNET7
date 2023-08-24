@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{61C0F893-1046-4D05-9B61-7DAAFC8657AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "Practice\Practice.csproj", "{8A416E01-FF2A-44B8-8675-C2CB04A6E535}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEncodings", "WorkingWithEncodings\WorkingWithEncodings.csproj", "{EB658175-D3CC-4756-ACC1-2F817694C386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStream", "WorkingWithStream\WorkingWithStream.csproj", "{2C3E3082-A3F9-46B7-930F-D931BF6AFFF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerialization", "WorkingWithSerialization\WorkingWithSerialization.csproj", "{89852053-712A-46AB-B92B-0D48FC8E777C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{397CFE57-6565-414D-A2D0-F7CF0151DC4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C0F893-1046-4D05-9B61-7DAAFC8657AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C0F893-1046-4D05-9B61-7DAAFC8657AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C0F893-1046-4D05-9B61-7DAAFC8657AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C0F893-1046-4D05-9B61-7DAAFC8657AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A416E01-FF2A-44B8-8675-C2CB04A6E535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A416E01-FF2A-44B8-8675-C2CB04A6E535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A416E01-FF2A-44B8-8675-C2CB04A6E535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A416E01-FF2A-44B8-8675-C2CB04A6E535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB658175-D3CC-4756-ACC1-2F817694C386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB658175-D3CC-4756-ACC1-2F817694C386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB658175-D3CC-4756-ACC1-2F817694C386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB658175-D3CC-4756-ACC1-2F817694C386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3E3082-A3F9-46B7-930F-D931BF6AFFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3E3082-A3F9-46B7-930F-D931BF6AFFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3E3082-A3F9-46B7-930F-D931BF6AFFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3E3082-A3F9-46B7-930F-D931BF6AFFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89852053-712A-46AB-B92B-0D48FC8E777C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89852053-712A-46AB-B92B-0D48FC8E777C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89852053-712A-46AB-B92B-0D48FC8E777C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89852053-712A-46AB-B92B-0D48FC8E777C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397CFE57-6565-414D-A2D0-F7CF0151DC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397CFE57-6565-414D-A2D0-F7CF0151DC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397CFE57-6565-414D-A2D0-F7CF0151DC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397CFE57-6565-414D-A2D0-F7CF0151DC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77DDDBC1-615A-4A27-A408-E512F8ADD0D8}
+	EndGlobalSection
+EndGlobal
