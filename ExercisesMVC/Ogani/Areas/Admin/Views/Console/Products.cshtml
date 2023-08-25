@@ -16,8 +16,9 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            <h6 class="m-0 font-weight-bold text-primary">All products</h6>
         </div>
+        <a asp-controller="Products" asp-action="Create"  class="btn btn-info">Create Product</a>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -54,8 +55,8 @@
                             <td>@item.ProductWeight</td>
                             <td>@item.ProductImageName</td>
                             <td class="d-flex justify-content-spacebetween">
-                                <a class="btn btn-info" >View</a>
-                                <a class="btn btn-success">Edit</a>
+                                <a asp-controller="Products" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-info"  >Details</a>
+                                    <a asp-controller="Products" asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-info">Delete</a>
                                 <a class="btn btn-danger">X</a>
                             </td>
                         </tr>

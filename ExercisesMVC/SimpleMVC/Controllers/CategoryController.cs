@@ -75,7 +75,8 @@ namespace SimpleMVC.Controllers
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Category category = _db.Categories.FirstOrDefault(c => c.CategoryID == id);
+            return View(category);
         }
 
         // POST: CategoryController/Delete/5
@@ -85,7 +86,14 @@ namespace SimpleMVC.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                Category category = _db.Categories.FirstOrDefault(c => c.CategoryID == id);
+                if (category != null)
+                {
+                    _db.Categories.Remove(category);
+                    _db.SaveChanges();
+
+                }
+                return RedirectToAction("Index","Start");
             }
             catch
             {
