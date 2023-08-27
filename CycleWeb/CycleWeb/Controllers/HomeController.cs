@@ -23,7 +23,24 @@ namespace CycleWeb.Controllers
             return View();
         }
 
-        public IActionResult _PartialViewAbout()
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Cycle() 
+        {
+            return View();
+        }
+
+
+        public IActionResult News()
+        {
+            return View();
+        }
+
+
+        public IActionResult Contact()
         {
             return View();
         }
