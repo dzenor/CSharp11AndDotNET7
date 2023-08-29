@@ -1,8 +1,8 @@
-﻿using CycleWeb.Models;
+﻿using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CycleWeb.Controllers
+namespace BookStore.Controllers
 {
     public class HomeController : Controller
     {
@@ -19,25 +19,6 @@ namespace CycleWeb.Controllers
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-
-
-
-        public IActionResult Cycle() 
-        {
-            return View();
-        }
-
-
-        public IActionResult News()
-        {
-            return View();
-        }
-
-
-        public IActionResult Contact()
         {
             return View();
         }
