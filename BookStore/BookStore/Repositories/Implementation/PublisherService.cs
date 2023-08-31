@@ -3,21 +3,21 @@ using BookStore.Repositories.Abstract;
 
 namespace BookStore.Repositories.Implementation
 {
-    public class GenreServices : IGenreService
+    public class PublisherService : IPublisherService
     {
         private readonly DatabaseContext _context;
 
-        public GenreServices(DatabaseContext context)
+        public PublisherService(DatabaseContext context)
         {
             _context = context;
         }
 
 
-        public bool Add(Genre model)
+        public bool Add(Publisher model)
         {
             try
             {
-                _context.Genre.Add(model);
+                _context.Publisher.Add(model);
                 _context.SaveChanges();
                 return true;
             }
@@ -27,17 +27,15 @@ namespace BookStore.Repositories.Implementation
             }
         }
 
-       
+
         public bool Delete(int id)
         {
             try
             {
-                var data = FindById(id);
+                var data = this.FindById(id);
                 if (data == null)
-                {
                     return false;
-                }
-                _context.Genre.Remove(data);
+                _context.Publisher.Remove(data);
                 _context.SaveChanges();
                 return true;
             }
@@ -47,21 +45,22 @@ namespace BookStore.Repositories.Implementation
             }
         }
 
-        public Genre FindById(int id)
+
+        public Publisher FindById(int id)
         {
-            return _context.Genre.Find(id);
+            return _context.Publisher.Find(id);
         }
 
-        public IEnumerable<Genre> GetAll()
+        public IEnumerable<Publisher> GetAll()
         {
-            return _context.Genre.ToList();
+            return _context.Publisher.ToList();
         }
 
-        public bool Update(Genre model)
+        public bool Update(Publisher model)
         {
             try
             {
-                _context.Genre.Update(model);
+                _context.Publisher.Update(model);
                 _context.SaveChanges();
                 return true;
             }

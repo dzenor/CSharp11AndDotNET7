@@ -1,0 +1,52 @@
+﻿@model IEnumerable< BookStore.Models.Domain.Book>
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <a class="btn btn-dark" asp-for="Book" asp-action="Add">Add more</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Books</h3>
+            <table class="table table-stripped table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Genre</th>
+                        <th>Isbn</th>
+                        <th>Total Pages</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Title</td>
+                            <td>@item.GenreName</td>
+                            <td>@item.Isbn</td>
+                            <td>@item.TotalPages</td>
+                            <td>@item.AuthorName</td>
+                            <td>@item.PublisherName</td>
+                            <td>
+                                <a class="btn btn-success" asp-for="Author" asp-action="Update" asp-route-id="@item.Id">Edit</a>
+                                <a class="btn btn-danger" asp-controller="Author" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                        
+                    }
+                </tbody>
+
+            </table>
+            
+        </div>
+    </div>
+
+</div>
+

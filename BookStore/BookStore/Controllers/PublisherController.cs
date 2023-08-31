@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Controllers
 {
-    public class GenreController : Controller
+    public class PublisherController : Controller
     {
-       private readonly IGenreService _genreService;
-        public GenreController(IGenreService service)
+        private readonly IPublisherService _publisherService;
+        public PublisherController(IPublisherService service)
         {
-            _genreService=service;        }
+            _publisherService=service;
+        }
 
         public IActionResult Add()
         {
@@ -18,14 +19,14 @@ namespace BookStore.Controllers
 
 
         [HttpPost]
-        public IActionResult Add(Genre model)
+        public IActionResult Add(Publisher model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-            var result = _genreService.Add(model);
-               if (result)
+            var result = _publisherService.Add(model);
+            if (result)
             {
                 TempData["msg"] = "Added Successfully";
                 return RedirectToAction(nameof(Add));
@@ -37,19 +38,19 @@ namespace BookStore.Controllers
 
         public IActionResult Update(int id)
         {
-            var record = _genreService.FindById(id);
+            var record = _publisherService.FindById(id);
             return View(record);
         }
 
 
         [HttpPost]
-        public IActionResult Update(Genre model)
+        public IActionResult Update(Publisher model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-            var result = _genreService.Update(model);
+            var result = _publisherService.Update(model);
             if (result)
             {
                 return RedirectToAction("GetAll");
@@ -62,7 +63,7 @@ namespace BookStore.Controllers
         public IActionResult Delete(int id)
         {
 
-            var result = _genreService.Delete(id);
+            var result = _publisherService.Delete(id);
             return RedirectToAction("GetAll");
         }
 
@@ -70,11 +71,9 @@ namespace BookStore.Controllers
 
         public IActionResult GetAll()
         {
-            var data = _genreService.GetAll();
+            var data = _publisherService.GetAll();
             return View(data);
 
         }
-
-
     }
 }
