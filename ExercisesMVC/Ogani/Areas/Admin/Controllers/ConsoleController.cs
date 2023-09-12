@@ -7,11 +7,11 @@ namespace Ogani.Areas.Admin.Controllers
 {
 
     [Area("Admin")]
-    public class Console : Controller
+    public class ConsoleController : Controller
     {
 
         private readonly ApplicationDbContext _db;
-        public Console(ApplicationDbContext dbContext)
+        public ConsoleController(ApplicationDbContext dbContext)
         {
             _db = dbContext;
         }
@@ -27,5 +27,14 @@ namespace Ogani.Areas.Admin.Controllers
 
             return View(products);
         }
+
+        public async Task<IActionResult> Categories()
+        {
+            List<Category> categories = await _db.Categories.ToListAsync();
+
+            return View(categories);
+        }
+
+
     }
 }

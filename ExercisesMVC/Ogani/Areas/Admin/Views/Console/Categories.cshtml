@@ -1,6 +1,6 @@
 ﻿@using Ogani.Data.Entities;
 
-@model List<Product>
+@model List<Category>
 @{}
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -16,48 +16,38 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">All products</h6>
+            <h6 class="m-0 font-weight-bold text-primary">All Categories</h6>
         </div>
-        <a asp-controller="Products" asp-action="Create"  class="btn btn-info">Create Product</a>
+        <a asp-controller="Category" asp-action="Create"  class="btn btn-info">Create Category</a>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Price</th>
-                            <th>Short Description</th>
-                            <th>Product Description</th>
-                            <th>Weight</th>
-                            <th>Image Name</th>
-                            <th>Update</th>
+                            <th>Description</th>
+                           
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Name</th>
-                            <th>Price</th>s
-                            <th>Short Description</th>
-                            <th>Product Description</th>
-                            <th>Weight</th>
-                            <th>Image Name</th>
-                            <th>Update</th>
+                            <th>Description</th>s
+                            
                         </tr>
                     </tfoot>
                     <tbody>
                         @foreach (var item in Model)
                         {
                         <tr>
-                            <td>@item.ProductName</td>
-                            <td>@item.ProductPrice</td>
-                            <td>@item.ProductShortDescription</td>
-                            <td>@item.ProductDescription</td>
-                            <td>@item.ProductWeight</td>
-                            <td>@item.ProductImageName</td>
+                            <td>@item.CategoryName</td>
+                            <td>@item.CategoryDescription</td>
+                            
                             <td class="d-flex justify-content-spacebetween">
-                                <a asp-controller="Products" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-info"  >Details</a> 
-                                    <a asp-controller="Products" asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-danger">X</a>
+                                <a asp-controller="Category" asp-action="Details" asp-route-id="@item.CategoryID" class="btn btn-info"  >Details</a>
+                                    <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.CategoryID" class="btn btn-danger">X</a>
                             </td>
+
                         </tr>
                             
                         }
