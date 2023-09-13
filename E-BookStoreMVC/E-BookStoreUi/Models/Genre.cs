@@ -14,7 +14,7 @@ namespace E_BookStoreUi.Models
             [MaxLength(40)]
       
 
-            public int GenreName { get; set; }
+            public string GenreName { get; set; }
 
             public List<Book> Books { get; set; }   
            
