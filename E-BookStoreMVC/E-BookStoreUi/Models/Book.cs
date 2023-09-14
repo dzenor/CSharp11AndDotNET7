@@ -33,6 +33,9 @@ namespace E_BookStoreUi.Models
         public List<OrderDetail> OrderDetail { get; set; }
         public List<CardDetail> CardDetail { get; set; }
 
+        [NotMapped]
+        public string GenreName { get; set; }
+
 
 
     }

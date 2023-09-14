@@ -7,15 +7,18 @@ namespace E_BookStoreUi.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IHomeRepository _homeRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IHomeRepository homeRepository)
         {
+            _homeRepository = homeRepository;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string sterm ="",int genreId=0)
         {
-            return View();
+            IEnumerable<Book> books = await _homeRepository.GetBooks(sterm,genreId);
+            return View(books);
         }
 
         public IActionResult Privacy()

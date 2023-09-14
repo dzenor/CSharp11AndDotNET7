@@ -1,3 +1,4 @@
+using E_BookStoreUi;
 using E_BookStoreUi.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -15,8 +16,9 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignI
     .AddDefaultUI()
     .AddDefaultTokenProviders();
 
-builder.Services.AddControllersWithViews()
-    ;
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IHomeRepository, HomeRepository>();
 
 var app = builder.Build();
 
