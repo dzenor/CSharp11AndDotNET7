@@ -1,4 +1,5 @@
 ﻿using E_BookStoreUi.Models;
+using E_BookStoreUi.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -18,7 +19,20 @@ namespace E_BookStoreUi.Controllers
         public async Task<IActionResult> Index(string sterm ="",int genreId=0)
         {
             IEnumerable<Book> books = await _homeRepository.GetBooks(sterm,genreId);
-            return View(books);
+            IEnumerable<Genre> genres = await _homeRepository.Genres();
+            BookDisplayModel bookModel = new BookDisplayModel
+            {
+                Books = books,
+                Genres = genres,
+                STerm = sterm,
+                GenreId = genreId
+
+
+            };
+            
+
+
+            return View(bookModel);
         }
 
         public IActionResult Privacy()
