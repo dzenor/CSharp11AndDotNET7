@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace E_BookStoreUi.Repositories
+namespace E_BookStoreUi.Repositories 
 {
-    public class CartRepository
+
+
+    public class CartRepository : ICartRepository
     {
         private readonly ApplicationDbContext _dbContext;
         private readonly UserManager<IdentityUser> _userManager;
@@ -138,6 +140,22 @@ namespace E_BookStoreUi.Repositories
             return cart;
 
 
+        }
+
+        private async Task<int> GetCartItemCount(string userId"")
+        {
+            if (!string.IsNullOrEmpty(userId))
+            {
+                userId = GetUserId();
+            }
+
+            var data = (from cart in _dbContext.ShoppingCards
+                        join cardDetail in _dbContext.CardDetails
+                        on cart.Id equals cardDetail.ShoppingCardId
+                        select new { cardDetail.Id }
+
+                        ).ToList().Count();
+                            
         }
 
 
