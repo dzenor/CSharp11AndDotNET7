@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Ogani.Data;
 using Ogani.Data.Entities;
 
@@ -70,6 +71,88 @@ namespace Ogani.Areas.Admin.Controllers
                     return RedirectToAction("Error", "Console",ex);
                 }
             }
+        }
+
+        //Get  admin/Category/delete
+        public IActionResult Delete(Guid? id)
+        {
+          
+             Category? category =   _context.Categories.FirstOrDefault(c => c.CategoryID == id);
+            if (category == null)
+                return RedirectToAction("Categories", "Console");
+            else
+             return View(category);      
+        }
+
+        [HttpPost,ActionName("Delete")]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult ConfirmDelete(Guid? id)
+        {
+
+            Category? category = _context.Categories.FirstOrDefault(c => c.CategoryID == id);
+            if (category == null)
+                return RedirectToAction("Categories", "Console");
+            else
+            {
+                try
+                {
+                    _context.Categories.Remove(category);
+                    _context.SaveChanges();
+                    return RedirectToAction("Categories", "Console");
+                }
+                catch (Exception)
+                {
+
+                    throw new Exception("Not found!");
+                }
+               
+            }
+               
+        }
+
+
+        //GET Admin/Category/Edit
+
+        public IActionResult Edit(Guid? id)
+        {
+            Category? category = _context.Categories.FirstOrDefault(c => c.CategoryID == id);
+            if (category == null)
+            {
+                return RedirectToAction("Categories", "Console");
+            }
+            else
+            {
+                return View(category);
+            }
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Edit( [Bind("CategoryID,CategoryName,CategoryDescription")] Category updatedCategory)
+        {
+
+            Category? category = _context.Categories.FirstOrDefault(c => c.CategoryID == updatedCategory.CategoryID);
+            if (category == null)
+                return RedirectToAction("Categories", "Console");
+            else
+            {
+                try
+                {
+                    category.CategoryName = updatedCategory.CategoryName;
+                    category.CategoryDescription = updatedCategory.CategoryDescription;
+
+                    _context.Categories.Update(updatedCategory);                  
+                    _context.SaveChanges();
+                    return RedirectToAction("Categories", "Console");
+                }
+                catch (Exception)
+                {
+
+                    throw new Exception("Not found!");
+                }
+
+            }
+
         }
 
 

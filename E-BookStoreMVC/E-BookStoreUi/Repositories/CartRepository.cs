@@ -18,15 +18,16 @@ namespace E_BookStoreUi.Repositories
             _httpContextAccessor=httpContextAccessor;
         }
 
-        public async Task<bool> AddItem(int bookId, int quantity)
+        public async Task<int> AddItem(int bookId, int quantity)
         {
+            string userId = GetUserId();
             using var transaction = _dbContext.Database.BeginTransaction();
             try
             {
-                string userId = GetUserId();
+              
                 if (string.IsNullOrEmpty(userId))
                 {
-                    return false;
+                    throw new Exception ("User is not logged-in");
                 }
 
                 var cart = await GetCart(userId);
@@ -58,32 +59,35 @@ namespace E_BookStoreUi.Repositories
                 }
                 _dbContext.SaveChanges();
                 transaction.Commit();
-                return true;
+               
 
 
             } catch (Exception ex)
             {
-                return false;
+               
             }
+            var cartItemCount =await GetCartItemCount(userId);
+            return cartItemCount;
 
 
         }
 
-        public async Task<bool> RemoveItem(int bookId)
+        public async Task<int> RemoveItem(int bookId)
         {
+            string userId = GetUserId();
             //using var transaction = _dbContext.Database.BeginTransaction();
             try
             {
-                string userId = GetUserId();
+                
                 if (string.IsNullOrEmpty(userId))
                 {
-                    return false;
+                    throw new Exception("User is not logged-in");
                 }
 
                 var cart = await GetCart(userId);
                 if (cart == null)
                 {
-                    return false;
+                    throw new Exception("Invalid cart!");
                 }
                 _dbContext.SaveChanges();
                 //cart detail section
@@ -91,13 +95,12 @@ namespace E_BookStoreUi.Repositories
                 var cartItem = _dbContext.CardDetails.FirstOrDefault(a => a.ShoppingCardId == cart.Id && a.BookId == bookId);
                 if (cartItem is null)
                 {
-                    return false;
+                    throw new Exception("The cart is empty!");
                 }
                 else if (cartItem.Quantity == 1)
                 {
                     _dbContext.CardDetails.Remove(cartItem);
                 }
-
 
                 else
                 {
@@ -105,14 +108,16 @@ namespace E_BookStoreUi.Repositories
                 }
                 _dbContext.SaveChanges();
                 //transaction.Commit();
-                return true;
+                
 
 
             }
             catch (Exception ex)
             {
-                return false;
+                
             }
+            var cartItemCount = await GetCartItemCount(userId);
+            return cartItemCount;
 
 
         }
@@ -142,19 +147,20 @@ namespace E_BookStoreUi.Repositories
 
         }
 
-        private async Task<int> GetCartItemCount(string userId"")
+        private async Task<int> GetCartItemCount(string userId="")
         {
             if (!string.IsNullOrEmpty(userId))
             {
                 userId = GetUserId();
             }
 
-            var data = (from cart in _dbContext.ShoppingCards
+            var data = await (from cart in _dbContext.ShoppingCards
                         join cardDetail in _dbContext.CardDetails
                         on cart.Id equals cardDetail.ShoppingCardId
                         select new { cardDetail.Id }
+                        ).ToListAsync();
 
-                        ).ToList().Count();
+            return data.Count;
                             
         }
 
@@ -164,6 +170,11 @@ namespace E_BookStoreUi.Repositories
             var principal = _httpContextAccessor.HttpContext.User;
             string userId = _userManager.GetUserId(principal);
             return userId;
+        }
+
+        Task<int> ICartRepository.GetCartItemCount(string userId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

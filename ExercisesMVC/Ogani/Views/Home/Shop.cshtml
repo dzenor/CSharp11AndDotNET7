@@ -1,9 +1,11 @@
-﻿@{
+﻿@using Ogani.Data.Entities
+@model List<Category>
+@{
     ViewData["Title"] = "Shop Page";
 }
 
+@Html.Partial("_HeroSectionPartial",Model)
 <!-- Hero Section Begin -->
-<partial name="_HeroSectionPartial"></partial>
 <!-- Hero Section End -->
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="..img/breadcrumb.jpg">

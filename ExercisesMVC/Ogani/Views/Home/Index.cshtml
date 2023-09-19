@@ -1,8 +1,10 @@
-﻿@{
+﻿@model List<Ogani.Data.Entities.Category>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<partial name="_HeroSectionPartial"></partial>
+@Html.Partial("_HeroSectionPartial",Model)
+@*<partial name="_HeroSectionPartial"></partial>*@
 <!-- Categories Section Begin -->
 <section class="categories">
     <div class="container">
@@ -52,7 +54,7 @@
                         <li data-filter=".oranges">Oranges</li>
                         <li data-filter=".fresh-meat">Fresh Meat</li>
                         <li data-filter=".vegetables">Vegetables</li>
-                        <li data-filter=".fastfood">Fastfood</li>
+                        <li data-filter=".fruits">Fruits</li>
                     </ul>
                 </div>
             </div>

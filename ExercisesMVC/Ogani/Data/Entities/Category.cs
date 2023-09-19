@@ -32,5 +32,7 @@ namespace Ogani.Data.Entities
 
         [StringLength(500, ErrorMessage = "Category description too long. Must be less then 500 characters")]
         public string CategoryDescription { get; set; }
+
+        public virtual ICollection<Product> Products { get; set;}
     }
 }

@@ -30,6 +30,13 @@ namespace Ogani.Data.Entities
         [StringLength(20)]
         public string? ProductImageName { get; set; }
 
+        public DateTime DateOfCreation { get; set; }
+
+        public DateTime DateOfEdit { get; set; }
+
+
+        public virtual Category ProductCategory { get; set; }
+
 
     }
 }
