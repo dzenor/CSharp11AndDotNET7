@@ -59,9 +59,6 @@ namespace E_BookStoreUi.Repositories
                 }
                 _dbContext.SaveChanges();
                 transaction.Commit();
-               
-
-
             } catch (Exception ex)
             {
                
@@ -122,7 +119,7 @@ namespace E_BookStoreUi.Repositories
 
         }
 
-        public async Task<IEnumerable<ShoppingCard>> GetUserCart()
+        public async Task<ShoppingCard> GetUserCart()
         {
             var userId = GetUserId();
             if(userId == null)
@@ -133,7 +130,7 @@ namespace E_BookStoreUi.Repositories
                 .Include(a => a.CartDetails)
                 .ThenInclude(a => a.Book)
                 .ThenInclude(a => a.Genre)
-                .Where(a => a.UserId == userId).ToListAsync();
+                .Where(a => a.UserId == userId).FirstOrDefaultAsync();
 
             return shoppingCart;
         }

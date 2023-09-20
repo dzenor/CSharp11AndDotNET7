@@ -59,9 +59,30 @@
                     <p><b>Price:</b> @book.Price kr </p>
 
         </div>
-        
-        <a href="#" class="btn btn-primary">Add to card </a>
+
+                <button type="button" onclick="add(@book.Id)" class="btn btn-primary">Add to cart</button>
     </div>
     </div>
     }
 </div>
+
+
+@section Scripts{
+    <script>     
+     async function add(bookId){
+            try{
+                var response = await fetch(`/Cart/AddItem?bookId = ${bookId}`);
+                console.log(bookId);
+            if(response.status==200){           
+            var result= await response.json();
+            console.log(result);
+            var cartCountEl = document.getElementById("cartCount");
+            cartCountEl.innerHTML=result;
+            }
+            }catch(err){
+                console.log(err)
+            }
+
+        }
+    </script>
+}
