@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+
+<div class="container">
+    <h1 class="text-center mb-5 border-bottom">My Contacts</h1>
+<table class="table">
+        <a type="button" class="btn btn-primary" asp-controller="Contact" asp-action="Add">Add Contact</a>
+
+    <thead>
+        <tr>
+            <th scope="col">Numbers</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>dzenisredzovic12@gmail.com</td>
+            <td>+38978445682</td>
+                <td class="d-flex  ">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-success">Edit</button>
+                </td>
+              
+        </tr>
+        
+    </tbody>
+</table>
+</div>
