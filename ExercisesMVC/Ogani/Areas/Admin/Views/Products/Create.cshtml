@@ -1,4 +1,5 @@
-﻿@model Ogani.Data.Entities.Product
+﻿@using Ogani.Data.Entities;
+@model Ogani.Data.Entities.Product
 
 @{
     ViewData["Title"] = "Create";
@@ -48,6 +49,21 @@
                 <span asp-validation-for="ProductImageName" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="ProductImageName" class="control-label"></label>
+                <input asp-for="ProductImageName" class="form-control" />
+                <span asp-validation-for="ProductImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="ProductCategory.CategoryID" class="form-control">
+
+                    @foreach (Category category in ViewBag.Categories)
+                    {
+                     <option value="@category">@category.CategoryName</option>
+                        
+                    }
+                </select>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -58,6 +74,8 @@
     <a asp-controller="Console" asp-action="Products">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+@*@section Scripts {
+    @{
+   await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}*@

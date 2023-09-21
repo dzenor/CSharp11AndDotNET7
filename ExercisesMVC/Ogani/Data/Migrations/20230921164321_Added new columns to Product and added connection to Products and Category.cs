@@ -29,8 +29,7 @@ namespace Ogani.Data.Migrations
                 name: "ProductCategoryCategoryID",
                 table: "tbl_products",
                 type: "uniqueidentifier",
-                nullable: false,
-                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"));
+                nullable: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_tbl_products_ProductCategoryCategoryID",
@@ -42,8 +41,7 @@ namespace Ogani.Data.Migrations
                 table: "tbl_products",
                 column: "ProductCategoryCategoryID",
                 principalTable: "tbl_categories",
-                principalColumn: "CategoryID",
-                onDelete: ReferentialAction.NoAction);
+                principalColumn: "CategoryID");
         }
 
         /// <inheritdoc />

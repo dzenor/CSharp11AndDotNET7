@@ -35,7 +35,7 @@ namespace Ogani.Data.Entities
         public DateTime DateOfEdit { get; set; }
 
 
-        public virtual Category ProductCategory { get; set; }
+        public virtual Category? ProductCategory { get; set; }
 
 
     }

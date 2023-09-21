@@ -257,7 +257,7 @@ namespace Ogani.Data.Migrations
                     b.Property<DateTime>("DateOfEdit")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("ProductCategoryCategoryID")
+                    b.Property<Guid?>("ProductCategoryCategoryID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ProductDescription")
@@ -348,9 +348,7 @@ namespace Ogani.Data.Migrations
                 {
                     b.HasOne("Ogani.Data.Entities.Category", "ProductCategory")
                         .WithMany("Products")
-                        .HasForeignKey("ProductCategoryCategoryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProductCategoryCategoryID");
 
                     b.Navigation("ProductCategory");
                 });
