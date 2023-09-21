@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Contacts>
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -10,7 +11,7 @@
 
     <thead>
         <tr>
-            <th scope="col">Numbers</th>
+            <th scope="col">Number</th>
             <th scope="col">FirstName</th>
             <th scope="col">LastName</th>
             <th scope="col">Email</th>
@@ -19,18 +20,32 @@
         </tr>
     </thead>
     <tbody>
+        @if (Model != null)
+            {
+                
+        @foreach (var contact in Model)
+            {
+                
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>dzenisredzovic12@gmail.com</td>
-            <td>+38978445682</td>
-                <td class="d-flex  ">
-                    <button type="button" class="btn btn-danger">Delete</button>
-                    <button type="button" class="btn btn-success">Edit</button>
+
+            <th scope="row">@contact.Id</th>
+                    <td>@contact.FirstName</td>
+                    <td>@contact.LastName</td>
+                    <td>@contact.Email</td>
+                    <td>@contact.Phone</td>
+                <td class="d-flex ">
+                            <a type="button" asp-controller="Contact"  asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger">Delete</a>
+                    <button type="button"  class="btn btn-success">Edit</button>
                 </td>
               
         </tr>
+                }
+
+            }
+            else
+            {
+                <p>No contacts available</p>
+            }
         
     </tbody>
 </table>
