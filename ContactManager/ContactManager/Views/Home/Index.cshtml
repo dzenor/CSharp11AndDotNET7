@@ -35,7 +35,7 @@
                     <td>@contact.Phone</td>
                 <td class="d-flex ">
                             <a type="button" asp-controller="Contact"  asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger">Delete</a>
-                    <button type="button"  class="btn btn-success">Edit</button>
+                            <a type="button" asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-success">Edit</a>
                 </td>
               
         </tr>

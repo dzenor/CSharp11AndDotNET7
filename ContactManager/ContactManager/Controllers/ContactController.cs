@@ -59,5 +59,44 @@ namespace ContactManager.Controllers
             _db.SaveChanges();  
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpGet]
+        public  IActionResult Edit(int id)
+        {
+          
+            var product = _db.Contacts.Find(id);
+            if (product == null)
+            {
+                return NotFound();
+
+            }
+
+            return View(product);
+
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id)
+        {
+            var product = _db.Contacts.Find(id);
+            if (product == null)
+            {
+                return NotFound();
+
+            }
+
+            if (ModelState.IsValid)
+            {
+            _db.Contacts.Update(product);
+            _db.SaveChanges();
+            return RedirectToAction("Index", "Home");
+
+            }
+            else
+            {
+                return View(product);
+            }
+           
+        }
     }
 }
