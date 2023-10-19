@@ -27,7 +27,6 @@
             {
                 
         <tr>
-
             <th scope="row">@contact.Id</th>
                     <td>@contact.FirstName</td>
                     <td>@contact.LastName</td>
@@ -37,14 +36,13 @@
                             <a type="button" asp-controller="Contact"  asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger">Delete</a>
                             <a type="button" asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-success">Edit</a>
                 </td>
-              
-        </tr>
+         </tr>
                 }
 
             }
             else
             {
-                <p>No contacts available</p>
+                <h1>No contacts available </h1>
             }
         
     </tbody>

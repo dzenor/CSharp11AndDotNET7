@@ -2,6 +2,9 @@
 using ContactManager.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System;
 
 
 namespace ContactManager.Controllers
@@ -76,27 +79,69 @@ namespace ContactManager.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(int id)
+        public IActionResult Edit(Contacts editedContact)
         {
-            var product = _db.Contacts.Find(id);
-            if (product == null)
-            {
-                return NotFound();
-
-            }
-
             if (ModelState.IsValid)
             {
-            _db.Contacts.Update(product);
-            _db.SaveChanges();
-            return RedirectToAction("Index", "Home");
+                try
+                {
+                    var existingContact = _db.Contacts.Find(editedContact.Id);
 
+                    if (existingContact == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingContact.FirstName = editedContact.FirstName;
+                    existingContact.LastName = editedContact.LastName;
+                    existingContact.Email = editedContact.Email;
+
+                    _db.Contacts.Update(existingContact);
+                    _db.SaveChanges();
+
+                    return RedirectToAction("Index", "Home");
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions, log the error, and provide feedback to the user.
+                    ModelState.AddModelError("", "An error occurred while updating the contact.");
+                    // You can also log the exception for debugging purposes.
+                }
             }
-            else
-            {
-                return View(product);
-            }
-           
+
+            // If validation fails or an error occurs, redisplay the form with validation errors.
+            return View(editedContact);
         }
+    
+
+
+
+
+
+
+
+        //[HttpPost]
+        //public IActionResult Edit(int id)
+        //{
+        //    var product = _db.Contacts.Find(id);
+        //    if (product == null)
+        //    {
+        //        return NotFound();
+
+    //    }
+
+    //    if (ModelState.IsValid)
+    //    {
+    //    _db.Contacts.Update(product);
+    //    _db.SaveChanges();
+    //    return RedirectToAction("Index", "Home");
+
+    //    }
+
+
+    //        return View(product);
+
+
+    //}
     }
 }
