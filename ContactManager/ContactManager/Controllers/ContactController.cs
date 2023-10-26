@@ -120,28 +120,5 @@ namespace ContactManager.Controllers
 
 
 
-        //[HttpPost]
-        //public IActionResult Edit(int id)
-        //{
-        //    var product = _db.Contacts.Find(id);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-
-    //    }
-
-    //    if (ModelState.IsValid)
-    //    {
-    //    _db.Contacts.Update(product);
-    //    _db.SaveChanges();
-    //    return RedirectToAction("Index", "Home");
-
-    //    }
-
-
-    //        return View(product);
-
-
-    //}
     }
 }

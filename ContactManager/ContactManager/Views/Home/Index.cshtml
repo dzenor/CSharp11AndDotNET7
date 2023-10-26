@@ -25,26 +25,27 @@
                 
         @foreach (var contact in Model)
             {
-                
-        <tr>
-            <th scope="row">@contact.Id</th>
-                    <td>@contact.FirstName</td>
-                    <td>@contact.LastName</td>
-                    <td>@contact.Email</td>
-                    <td>@contact.Phone</td>
-                <td class="d-flex ">
-                            <a type="button" asp-controller="Contact"  asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger">Delete</a>
-                            <a type="button" asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-success">Edit</a>
-                </td>
-         </tr>
+                <tr>
+                    <th scope="row">@contact.Id</th>
+                            <td>@contact.FirstName</td>
+                            <td>@contact.LastName</td>
+                            <td>@contact.Email</td>
+                            <td>@contact.Phone</td>
+                        <td class="d-flex ">
+                                    <a type="button" asp-controller="Contact"  asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger">Delete</a>
+                                    <a type="button" asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-success">Edit</a>
+                        </td>
+                 </tr>
                 }
 
             }
             else
             {
-                <h1>No contacts available </h1>
+                <tr>
+                    <td colspan="6"><h1>No contacts available</h1></td>
+                </tr>
             }
-        
     </tbody>
 </table>
+        
 </div>

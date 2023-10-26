@@ -19,7 +19,10 @@ namespace ContactManager.Controllers
         public IActionResult Index()
         {
             var contacts = _db.Contacts.ToList(); // Retrieve contacts from the database
+           
             return View(contacts);
+
+            
         }
 
         public IActionResult Privacy()
